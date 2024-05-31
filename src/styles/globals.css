@@ -1,0 +1,25 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --mui-theme-primary-light: #33ab9f;
+  --mui-theme-primary-main: #009688;
+  --mui-theme-primary-dark: #00695f;
+  --mui-theme-secondary-light: #ffcf33;
+  --mui-theme-secondary-main: #ffc400;
+  --mui-theme-secondary-dark: #b28900;
+}
+html {
+  scroll-padding-top: 102px; /* height of sticky header */
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
