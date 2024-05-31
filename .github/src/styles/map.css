@@ -1,0 +1,45 @@
+/**
+specific for mapbox popup
+if you need to change the anchor/offset/maxwidth/so on, edit the popup's props in map.tsx
+
+.mapboxgl-popup <- outside container, transparent
+.mapboxgl-popup-tip <- the triangle tail 
+.mapboxgl-popup-content <- the content block
+div <- this is the empty div without classname or css
+the any component you added as the children of the popup component
+
+*/
+/**
+add your HTMLElement with an Id and write your style in a new section with same subClassName start with .mapboxgl-
+*/
+#bannerMap .mapboxgl-popup .mapboxgl-popup-tip {
+  opacity: 0;
+}
+#bannerMap .mapboxgl-popup .mapboxgl-popup-content {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+#bannerMap .mapboxgl-popup .mapboxgl-popup-content .mapboxgl-popup-close-button {
+  display: none;
+}
+
+#MapWithSideBar {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#MapWithSideBar ::-webkit-scrollbar {
+  width: 10px;
+}
+#MapWithSideBar ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 3px;
+}
+#MapWithSideBar ::-webkit-scrollbar-thumb {
+  background: var(--mui-theme-primary-light);
+  border-radius: 3px;
+}
+#MapWithSideBar ::-webkit-scrollbar-thumb:hover {
+  background: var(--mui-theme-primary-main);
+}

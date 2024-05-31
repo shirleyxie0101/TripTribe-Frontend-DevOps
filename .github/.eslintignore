@@ -1,0 +1,2 @@
+# Exclude the entire generated folder
+/src/__generated__/
